@@ -1,0 +1,104 @@
+:root {
+  --warna-utama: #03002e;
+  --warna-kedua: #f6d13a;
+  --warna-ketiga: #212656;
+  --warna-keempat: #f63abe;
+}
+body {
+  background-color: var(--warna-ketiga);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.card {
+  background-color: var(--warna-utama);
+  box-shadow: inset 5px 5px 12px var(--warna-ketiga),
+    5px 5px 12px rgb(0, 0, 0, 0.16);
+  width: 300px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*
+box-shadow: x y z warna;
+nilai x untuk menentukan arah horizontal
+nilai y untuk menentukan arah vertikal
+nilai z untuk menentukan keburaman (blur) bayangan
+nilai warna, bisa menggunakan rgb(), rgba(), kode warna, 
+nama warna, dsb.
+
+Jika nilai x dan y diberikan nilai negatif, 
+maka bayangannya akan mengarah ke atas. 
+Sementara itu, nili z tidak boleh negatif.
+*/
+.display {
+  background-color: rgb(100, 100, 100);
+  box-shadow: inset 2px 2px 11px var(--warna-utama),
+    5px 5px 12px rgb(0, 0, 0, 0.16);
+  height: 30%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.display input {
+  background-color: transparent;
+  border: none;
+  text-align: end;
+  font-size: 30px;
+  width: 90%;
+  outline: none;
+}
+.button {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.tombol-kiri {
+  /* background-color: var(--warna-kedua); */
+  width: 70%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* grid-gap: 10px; */
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px;
+}
+.tombol {
+  background-color: var(--warna-utama);
+  box-shadow: inset 1px 1px 4px var(--warna-ketiga),
+    5px 5px 12px rgb(0, 0, 0, 0.18);
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--warna-kedua);
+}
+.tombol:hover {
+  transform: scale(0.9);
+}
+.tombol-kanan {
+  background-color: var(--warna-keempat);
+  /* background-color: var(--warna-ketiga); */
+  box-shadow: inset 2px 2px 11px var(--warna-utama),
+    5px 5px 12px rgb(0, 0, 0, 0.18);
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 6px;
+  border-radius: 10px;
+}
